@@ -10,9 +10,10 @@ namespace Infrastucture.Service
         void Register<TService>(TService implementation) where TService : IService;
         TService GetService<TService>() where TService : IService;
     }
+    
+    public interface IService
+    {
+    
+    }
 }
 
-public interface IService
-{
-    
-}

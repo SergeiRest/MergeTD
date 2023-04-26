@@ -1,18 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using Infrastucture.Service;
+using Scripts.Towers;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameInitializer : MonoBehaviour
 {
-    void Awake()
+    private void Awake()
     {
         IContainer container = new Container();
         AllServices.Init(container);
         
         IMoneyService moneyService = new MoneyService();
+        IGridService gridService = new GridService();
+        ITowerContainer towerContainer = new TowerContainer();
+        
         container.Register<IMoneyService>(moneyService);
+        container.Register<IGridService>(gridService);
+        container.Register<ITowerContainer>(towerContainer);
+        SceneManager.LoadScene(1);
     }
 }
 

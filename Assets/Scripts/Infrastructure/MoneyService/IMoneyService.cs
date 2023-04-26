@@ -1,9 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using System;
 
-public interface IMoneyService : IService
+namespace Infrastucture.Service
 {
-    public int MoneyCount { get; }
-    public void AddMoney(int value);
+    public interface IMoneyService : IService
+    {
+        public int MoneyCount { get; }
+        public event Action<int> MoneyCountChanged;
+
+        public void AddMoney(int value);
+        public void SendEvent();
+    }
 }

@@ -1,17 +1,26 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoneyService : IMoneyService
+namespace Infrastucture.Service
 {
-    public int MoneyCount => money;
-
-    private int money = 100;
-
-    public void AddMoney(int value)
+    public class MoneyService : IMoneyService
     {
-        money += value;
-        Debug.Log("Add " + money);
+        private int money = 100;
+
+        public int MoneyCount => money;
+        public event Action<int> MoneyCountChanged;
+
+        public void AddMoney(int value)
+        {
+            money += value;
+        }
+
+        public void SendEvent()
+        {
+            MoneyCountChanged?.Invoke(MoneyCount);
+        }
 
     }
 }
