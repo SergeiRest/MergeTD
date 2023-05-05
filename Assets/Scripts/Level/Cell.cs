@@ -1,3 +1,5 @@
+using System;
+using Infrastucture;
 using UnityEngine;
 using Scripts.Towers;
 
@@ -7,15 +9,20 @@ namespace Level.Grid
     {
         [SerializeField] private Transform pointToBuild;
 
-        private AbstractTower tower = null;
+        private IGameEntity tower;
 
-        public AbstractTower Tower => tower;
+        public IGameEntity Tower => tower;
 
-        public void SetChild(AbstractTower tower)
+        public void SetChild(IGameEntity tower)
         {
             this.tower = tower;
-            tower.transform.SetParent(transform);
-            tower.transform.localPosition = Vector3.zero;
+            tower.Transform.SetParent(transform);
+            tower.Transform.localPosition = Vector3.zero;
+        }
+
+        public void Clear()
+        {
+            tower = null;
         }
     }
 }

@@ -11,5 +11,6 @@ namespace Infrastucture.Service
         public void Init(Level.Grid.Grid grid);
         public void TryBuild(out Cell cell);
         public void TryBuildSelectedTower(out Cell cell, AbstractTower tower);
+        public Level.Grid.Grid GetGrid();
     }
 }

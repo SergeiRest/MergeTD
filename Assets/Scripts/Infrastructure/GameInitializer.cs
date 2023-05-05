@@ -14,10 +14,12 @@ public class GameInitializer : MonoBehaviour
         IMoneyService moneyService = new MoneyService();
         IGridService gridService = new GridService();
         ITowerContainer towerContainer = new TowerContainer();
+        IMovingService movingService = new MovingService();
         
         container.Register<IMoneyService>(moneyService);
         container.Register<IGridService>(gridService);
         container.Register<ITowerContainer>(towerContainer);
+        container.Register<IMovingService>(movingService);
         SceneManager.LoadScene(1);
     }
 }

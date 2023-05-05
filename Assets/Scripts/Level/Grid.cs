@@ -8,7 +8,7 @@ namespace Level.Grid
 {
     public class Grid : MonoBehaviour
     {
-        [field: SerializeField] public Cell[] Cells;
+        [field: SerializeField] public Cell[] Cells { get; private set; }
 
         private void Awake()
         {

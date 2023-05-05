@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Level.Grid;
 using Scripts.Towers;
 using UnityEngine;
+using Grid = Level.Grid.Grid;
 
 namespace Infrastucture.Service
 {
@@ -29,6 +30,11 @@ namespace Infrastucture.Service
             {
                 GameFactory.BuildSelectedTower(cell, tower);
             }
+        }
+
+        public Grid GetGrid()
+        {
+            return grid;
         }
     }
 }

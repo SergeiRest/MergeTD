@@ -5,10 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MergeTD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MergeTD/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameInitializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/MoneyService/IMoneyService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/MoneyService/IMoneyService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/MoneyService/MoneyService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/MoneyService/MoneyService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Service/IContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Service/IContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GridService/GridService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GridService/GridService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GridService/IGridService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GridService/IGridService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/Cell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level/Cell.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/Grid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level/Grid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Towers/AbstractTower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Towers/AbstractTower.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +77,9 @@
       <updated>1682319353369</updated>
       <workItem from="1682319370975" duration="8049000" />
       <workItem from="1682494405395" duration="5754000" />
-      <workItem from="1682522796459" duration="6679000" />
+      <workItem from="1682522796459" duration="7558000" />
+      <workItem from="1683043671702" duration="855000" />
+      <workItem from="1683298036283" duration="7842000" />
     </task>
     <servers />
   </component>
